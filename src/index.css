@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+
+:root{
+  --clr-grey-10: hsl(210, 36%, 96%);
+  --mainFont:'Roboto Slab', serif;
+  --clr-red:#cd1818;
+}
+
+body{
+  background:var(--clr-grey-10);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: var(--clr-grey-10);
+}
+
+
+
+.mainContainer{
+  width: 35%;
+  background: #fff;
+  margin: 0 auto;
+  min-height: 180px;
+  height: auto;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.tite{
+  transform: translateY(10px);
+  width: 100%;
+  text-align: center;
+  font-family: var(--mainFont);
+  font-size: 12px;
+}
+
+.form{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+
+}
+
+input{
+  outline: none;
+  width: 60%;
+  font-family: var(--mainFont);
+  height: 20px;
+}
+
+.form button{
+  font-family: var(--mainFont);
+  background: #526DCD;
+  border: none;
+  outline: none;
+  color: white;
+  cursor: pointer;
+}
+
+.clearBtn{
+  margin-top: 10px;
+  background: none;
+  border: none;
+  color: #D40041;
+  cursor: pointer;
+  font-family: var(--mainFont);
+  letter-spacing: 0.8px;
+  margin-bottom: 20px;
+}
+
+.clearBtn:hover{
+border-radius: 2px;
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.151);
+}
+
+.itemContainer{
+  width: 100%;
+}
+
+.item{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-left: 40px;
+  padding-right: 20px;
+  font-family: var(--mainFont);
+  font-size: 14px;
+}
+.item h2{
+  width: 90%;
+  text-transform: capitalize;
+  }
+
+
+
+svg{
+  height: 16px;
+  width: 30px;
+  cursor: pointer;
+}
+
+.editSvg{
+  color: #0ADE6F;
+}
+
+.deletSvg{
+  color: #DE0A26;
+}
+
+
+@media screen and (max-width:1000px){
+  .mainContainer{
+    width: 60%;
+    
+  }
+}
+
+@media screen and (max-width:768px){
+  .mainContainer{
+    width: 80%;
+    font-size: 13px;
+  }
+}
+
+.danger{
+  width: 100%;
+  font-family: var(--mainFont);
+  text-align: center;
+  background: #d4002767;
+  padding: 10px 0 10px 0;
+  color: #AE092E
+}
+
+.succes{
+  width: 100%;
+  font-family: var(--mainFont);
+  text-align: center;
+  background: #10cb6a50;
+  padding: 10px 0 10px 0;
+  color: #08AF0F
+}
